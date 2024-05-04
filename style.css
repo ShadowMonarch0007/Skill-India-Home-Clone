@@ -56,6 +56,9 @@ select:focus{
 body{
 
 }
+#second{
+    padding-bottom: 3rem;
+}
 .buildingaskilledindia{
     margin: 0 15%;
     width: 70%;
@@ -77,6 +80,10 @@ body{
 .basicarditem{
     width: 33.33%;
     padding: 20px 0;
+}
+.basicarditem:hover{
+    transform: scale(1.1);
+    transition: all 1s ease;
 }
 .basicarditem p{
     font-size: 16px;
@@ -106,7 +113,6 @@ button.regi{
     font-family: sans-serif;
     color: #FFFFFF;
     background-color: #DF6E12;
-    padding: 16 30 15;
     text-transform: uppercase;
     height: 50px;
     width: 135px;
@@ -119,6 +125,220 @@ button.regi{
 }
 button.regi:hover{
     transform: scale(1.1);
+}
+#third{
+    background-color: #f1f1f1;
+}
+.opportunities{
+    padding-top: 4rem;
+    display: flex;
+    justify-content: end;
+}
+.opportunities button{
+    height: 60px;
+    width: 320px;
+    background: #FFFFFF;
+    box-shadow: 0 0 20px 2px #042cb00d;
+    border-radius: 70px;
+    margin-bottom: 20px;
+    border: none;
+    padding: 4px 20px 4px 4px;
+    margin-top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.opportunities a{
+    text-decoration: none;
+}
+.opportunities span{
+    font-family: sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 22px;
+    color: #042CB0;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.opporcardslist{
+    display: flex;
+    margin: 0 10%;
+    padding-top: 2rem;
+    padding-bottom: 7rem;
+    width: 80%;
+    justify-content: space-evenly;
+}
+.opporcards{
+    width: 32%;
+    margin-left: 2%;
+    background: #FFFFFF;
+    box-shadow: 0 0 20px 2px #042cb00d;
+    border-radius: 10px;
+    padding: 40px;
+    width: 100%;
+    flex-direction: column;
+    flex-grow: 1;
+    display: flex;
+    align-items: baseline;
+}
+.opporcards:hover,
+.opporcards-orange:hover{
+    transform: scale(1.1);
+    transition: all 1s ease;
+}
+.searchbox{
+    display: flex;
+    justify-content: space-between;
+    margin: 0 0 10px;
+    width: 250px;
+    border-bottom: solid #636363 0.05rem;
+}
+.searchboxip input{
+    text-decoration: none;
+    border-color: transparent;
+}
+.searchbox input:focus{
+    outline: none;
+}
+.searchboxsvg,
+.searchboxip,
+.searchicon{
+    padding-top: 1.5rem;
+    margin: 0.5rem 0;
+}
+.searchboxip input{
+    color: #636363;
+    font-size: 14px;
+    vertical-align: middle;
+}
+.service-card-inner h3{
+    font-family: sans-serif;
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 36px;
+    color: #333333;
+    margin: 0 0 10px;
+}
+.service-card-inner h4{
+    font-family: sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 31px;
+    color: #000000;
+    margin-bottom: 20px;
+}
+.service-card-inner img{
+    height: 142px;
+    width: 157px;
+}
+.service-card-inner p{
+    font-family: sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    color: #000000;
+    min-height: 28px;
+    margin: 0 0 12px;
+}
+.service-card-inner button.btn-primary-style1{
+    font-size: 16px;
+    font-family: sans-serif;
+    color: #FFFFFF;
+    background-color: #DF6E12;
+    padding: 0 1rem;
+    text-transform: uppercase;
+    height: 50px;
+    border-radius: 10px;
+    text-decoration: none;
+    border-style: none;
+}
+.opporcards-orange{
+    width: 32%;
+    margin-left: 2%;
+    background: #DF6E12;
+    box-shadow: 0 0 20px 2px #042cb00d;
+    border-radius: 10px;
+    padding: 50px 40px;
+    width: 100%;
+    flex-direction: column;
+    flex-grow: 1;
+    display: flex;
+    align-items: baseline;
+}
+.service-card-inner-orange h4{
+    font-family: sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 19px;
+    color: #ffffff;
+    margin-bottom: 40px;
+}
+.service-card-inner-orange h3{
+    font-family: sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+    color: #ffffff;
+    margin-bottom: 20px;
+}
+.services-card-header{
+    display: flex;
+    justify-content: space-evenly;
+}
+.services-card-header h4{
+    font-family: sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 29px;
+    color: #FFFFFF;
+    margin-bottom: 0;
+    margin-right: 20px;
+    max-width: 190px;
+}
+.quetion-img{
+    background-color: #FFFFFF;
+    border-radius: 50%;
+    height: 80px;
+    width: 80px;
+    padding: 14px 24px;
+    display: flex;
+    align-items: center;
+    right: -20px;
+    top: -20px;
+    position: relative;
+}
+.services-footer-btn p{
+    font-family: sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: #FFFFFF;
+    margin: 0 0 10px;
+    min-height: auto;
+    transform: translateY(1rem);
+}
+.btn-primary-special {
+    font-family: sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: normal;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    background-color: #042CB0;
+    padding: 10px 30px;
+    border-radius: 10px;
+}
+.services-footer-btn{
+    transform: translateY(5rem);
+    display: flex;
+    justify-content: space-between;
 }
 .carousel-indicators [data-bs-target] {
     padding-top: 5rem ;
@@ -221,6 +441,13 @@ button.regi:hover{
 }
 .rdown2item{
     align-items: center;
+}
+.appstore{
+    display: flex;
+    justify-content: space-between;
+}
+.appstore img{
+    margin-left:1rem;
 }
 .fst{
     margin-top: 300px;
@@ -390,6 +617,88 @@ footer{
 }
 
 @media only screen and (max-width:1400px){
+    .carthings{
+        flex-direction: column;
+    }
+    .carousel-item img{
+        height: 200px;
+    }
+    .carimg{
+        display: flex;
+        justify-content: center;
+    }
+    .cardesc{
+        width: 100%;
+        margin: 55px 5%;
+    }
+    .cardesc h2{
+        font-size: 20px;
+        line-height: 24px;
+        margin: 0 0 10px;
+    }
+    .cardesc p{
+        font-size: 14px;
+        line-height: 14px;
+        margin: 0 0 20px;
+    }
+    .cardesc button{
+        padding: 5px 10px;
+    }
+    .download{
+        flex-direction: column;
+    }
+    .clmn{
+        width: 100%;
+    }
+    .snd img{
+        width: 250px;
+    }
+    .rdown h2{
+        font-size: 18px;
+        margin: 0 0 12px;
+        text-align: center;
+    }
+    .rdown p{
+        font-size: 14px;
+        padding: 0 0 10px;
+        text-align: center;
+    }
+    .rdown2{
+        width: 100%;
+    }
+    .rdown2 span{
+        font-size: 10px;
+        margin: 10px 5px 0;
+    }
+    .rdown2item a img{
+        margin-top: 25px;
+        transform: translateX(-2rem);
+    }
+    .rdown2item{
+        align-items: center;
+    }
+    .appstore{
+        flex-direction: column;
+        width: 50%;
+    }
+    .rdownqr img{
+        width: 80px;
+        transform: translateY(1rem);
+    }
+    .rdownqr span{
+        max-width: 500px;
+        margin-left: 2rem;
+        transform: translateY(-2.5rem);
+    }
+    .rdownqr{
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        width: 50%;
+    }
+    .fst{
+        margin-top: 100px;
+    }
     .ftrlogo{
         height: 50px;
         width: 100%;
