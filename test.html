@@ -8,6 +8,8 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <noscript>
         <link rel="stylesheet" href="./assets/fontawesome/css/all.min.css">
     </noscript>
@@ -29,16 +31,33 @@
         </div>
         <div class="carousel-inner">
             <div class="carousel-item active">
-                <div class="carthings">
-                    <div class="carimg">
-                        <img src="logo/learn-more-img2.svg" alt="">
+                <!-- Button trigger modal -->
+                <div class="vidthumbthings">
+                    <div class="vidthumb">
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                            <img src="logo/fifth1.jpg" alt="">
+                        </button>
                     </div>
-                    <div class="cardesc">
-                        <h2> Explore, Learn, Get Skill Certified </h2>
-                        <p> Find skill courses across sectors and locations </p>
-                        <a href="https://www.skillindiadigital.gov.in/courses">
-                            <button> Learn More </button>
-                        </a>
+    
+                    <!-- Modal -->
+                    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    ...
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                    <button type="button" class="btn btn-primary">Save changes</button>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -71,8 +90,6 @@
                 </div>
             </div>
         </div>
-        <button id="toggleCarousel" class="carousel-control-play" type="button"
-            data-bs-target="carouselExampleInterval"><i class="fa fa-pause"></i></button>
         <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval"
             data-bs-slide="prev">
             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -86,153 +103,34 @@
     </div>
     </div>
 
-
+<style>
+    .carousel-inner .vidthumbthings button{
+        background-color: transparent;
+        outline: none;
+        border: none;
+        /* text-decoration: none; */
+    }
+    .vidthumb:hover{
+        transform: scale(1.1);
+        position: relative;
+        transition: all 1s ease;
+    }
+    .vidthumb img{
+        height: 320px;
+        width: 100%;
+    }
+    .carousel-inner{
+        height: 320px;
+        width: 572px;
+    }
+    #carouselExampleIndicators{
+        height: 320px;
+        width: 750px;
+    }
+</style>
 
 
 
 </body>
 
 </html>
-<script>
-    $(function () {
-        /* Initialize Carousel */
-        var paused = 0;
-        $('#carouselExampleIndicators').carousel({
-            interval: 1000,
-            pause: 0
-        });
-
-        /* Play trigger */
-        $('#toggleCarousel').click(function () {
-            var state = (paused) ? 'cycle' : 'pause';
-            paused = (paused) ? 0 : 1;
-            $('#myCarousel').carousel(state);
-            $(this).find('i').toggleClass('fa-play fa-pause');
-        });
-    });
-
-</script>
-<style>
-    .carousel-control-play {
-        height: 20px;
-        width: 20px;
-    }
-</style>
-
-
-
-
-
-
-
-<section class="testimonial-contain">
-    <div class="container">
-        <div class="flex-row">
-            <div data-aos="fade-up" data-aos-delay="400" data-aos-duration="1000"
-                class="testimonial-img aos-init aos-animate"><img
-                    src="./../../../../assets/new-ux-img/discovery-home/testimonial/testimonial1-img.svg"
-                    alt="testimonial" class="img-fluid"></div>
-            <div data-aos="fade-up" data-aos-delay="400" data-aos-duration="1000"
-                class="testimonial-slider aos-init aos-animate">
-                <h2 class="section-title"> Success stories </h2><ngx-slick-carousel
-                    class="carousel testimonial-card-slider slick-initialized slick-slider slick-dotted">
-                    <div class="slick-list draggable">
-                        <div class="slick-track"
-                            style="opacity: 1; width: 15000px; transform: translate3d(0px, 0px, 0px);">
-                            <div ngxslickitem="" class="slide slick-slide ng-star-inserted slick-current slick-active"
-                                data-slick-index="0" aria-hidden="false" tabindex="0" role="tabpanel"
-                                id="slick-slide160" aria-describedby="slick-slide-control160"><app-service-offering
-                                    _nghost-ukt-c313="">
-                                    <div _ngcontent-ukt-c313="" tabindex="0" class="testimonial-video-card"><img
-                                            _ngcontent-ukt-c313=""
-                                            src="./../../../../../../assets/new-ux-img/discovery-home/testimonial/1.jpg"
-                                            alt="Skill India">
-                                        <div _ngcontent-ukt-c313="" class="overlay"></div>
-                                        <div _ngcontent-ukt-c313="" class="video-icon"><svg _ngcontent-ukt-c313=""
-                                                width="60" height="60" viewBox="0 0 60 60" fill="none"
-                                                xmlns="http://www.w3.org/2000/svg">
-                                                <g _ngcontent-ukt-c313="" id="play_circle_outline_black_24dp">
-                                                    <path _ngcontent-ukt-c313="" id="Shape" fill-rule="evenodd"
-                                                        clip-rule="evenodd"
-                                                        d="M29.6108 5.45312C15.8467 5.45312 4.67578 16.624 4.67578 30.3882C4.67578 44.1523 15.8467 55.3233 29.6108 55.3233C43.375 55.3233 54.5459 44.1523 54.5459 30.3882C54.5459 16.624 43.375 5.45312 29.6108 5.45312ZM24.625 41.6134L39.586 30.3927L24.625 19.1719V41.6134ZM9.66406 30.3856C9.66406 41.3819 18.6158 50.3336 29.6121 50.3336C40.6085 50.3336 49.5602 41.3819 49.5602 30.3856C49.5602 19.3892 40.6085 10.4375 29.6121 10.4375C18.6158 10.4375 9.66406 19.3892 9.66406 30.3856Z"
-                                                        fill="white"></path>
-                                                </g>
-                                            </svg></div>
-                                    </div>
-                                </app-service-offering></div>
-                            <div ngxslickitem="" class="slide slick-slide ng-star-inserted" data-slick-index="1"
-                                aria-hidden="true" tabindex="-1" role="tabpanel" id="slick-slide161"
-                                aria-describedby="slick-slide-control161"><app-service-offering _nghost-ukt-c313="">
-                                    <div _ngcontent-ukt-c313="" tabindex="0" class="testimonial-video-card"><img
-                                            _ngcontent-ukt-c313=""
-                                            src="./../../../../../../assets/new-ux-img/discovery-home/testimonial/2.jpg"
-                                            alt="Apprenticeships">
-                                        <div _ngcontent-ukt-c313="" class="overlay"></div>
-                                        <div _ngcontent-ukt-c313="" class="video-icon"><svg _ngcontent-ukt-c313=""
-                                                width="60" height="60" viewBox="0 0 60 60" fill="none"
-                                                xmlns="http://www.w3.org/2000/svg">
-                                                <g _ngcontent-ukt-c313="" id="play_circle_outline_black_24dp">
-                                                    <path _ngcontent-ukt-c313="" id="Shape" fill-rule="evenodd"
-                                                        clip-rule="evenodd"
-                                                        d="M29.6108 5.45312C15.8467 5.45312 4.67578 16.624 4.67578 30.3882C4.67578 44.1523 15.8467 55.3233 29.6108 55.3233C43.375 55.3233 54.5459 44.1523 54.5459 30.3882C54.5459 16.624 43.375 5.45312 29.6108 5.45312ZM24.625 41.6134L39.586 30.3927L24.625 19.1719V41.6134ZM9.66406 30.3856C9.66406 41.3819 18.6158 50.3336 29.6121 50.3336C40.6085 50.3336 49.5602 41.3819 49.5602 30.3856C49.5602 19.3892 40.6085 10.4375 29.6121 10.4375C18.6158 10.4375 9.66406 19.3892 9.66406 30.3856Z"
-                                                        fill="white"></path>
-                                                </g>
-                                            </svg></div>
-                                    </div>
-                                </app-service-offering></div>
-                            <div ngxslickitem="" class="slide slick-slide ng-star-inserted" data-slick-index="2"
-                                aria-hidden="true" tabindex="-1" role="tabpanel" id="slick-slide162"
-                                aria-describedby="slick-slide-control162"><app-service-offering _nghost-ukt-c313="">
-                                    <div _ngcontent-ukt-c313="" tabindex="0" class="testimonial-video-card"><img
-                                            _ngcontent-ukt-c313=""
-                                            src="./../../../../../../assets/new-ux-img/discovery-home/testimonial/3.jpg"
-                                            alt="Skill Courses">
-                                        <div _ngcontent-ukt-c313="" class="overlay"></div>
-                                        <div _ngcontent-ukt-c313="" class="video-icon"><svg _ngcontent-ukt-c313=""
-                                                width="60" height="60" viewBox="0 0 60 60" fill="none"
-                                                xmlns="http://www.w3.org/2000/svg">
-                                                <g _ngcontent-ukt-c313="" id="play_circle_outline_black_24dp">
-                                                    <path _ngcontent-ukt-c313="" id="Shape" fill-rule="evenodd"
-                                                        clip-rule="evenodd"
-                                                        d="M29.6108 5.45312C15.8467 5.45312 4.67578 16.624 4.67578 30.3882C4.67578 44.1523 15.8467 55.3233 29.6108 55.3233C43.375 55.3233 54.5459 44.1523 54.5459 30.3882C54.5459 16.624 43.375 5.45312 29.6108 5.45312ZM24.625 41.6134L39.586 30.3927L24.625 19.1719V41.6134ZM9.66406 30.3856C9.66406 41.3819 18.6158 50.3336 29.6121 50.3336C40.6085 50.3336 49.5602 41.3819 49.5602 30.3856C49.5602 19.3892 40.6085 10.4375 29.6121 10.4375C18.6158 10.4375 9.66406 19.3892 9.66406 30.3856Z"
-                                                        fill="white"></path>
-                                                </g>
-                                            </svg></div>
-                                    </div>
-                                </app-service-offering></div>
-                        </div>
-                    </div><!---->
-                    <ul class="slick-dots" style="" role="tablist">
-                        <li class="slick-active" role="presentation"><button type="button" role="tab"
-                                id="slick-slide-control160" aria-controls="slick-slide160" aria-label="1 of 3"
-                                tabindex="0" aria-selected="true">1</button></li>
-                        <li role="presentation" class=""><button type="button" role="tab" id="slick-slide-control161"
-                                aria-controls="slick-slide161" aria-label="2 of 3" tabindex="-1">2</button></li>
-                        <li role="presentation" class=""><button type="button" role="tab" id="slick-slide-control162"
-                                aria-controls="slick-slide162" aria-label="3 of 3" tabindex="-1">3</button></li>
-                    </ul>
-                </ngx-slick-carousel>
-                <div class="play-pause"><button type="button" title="Play" tabindex="-1" class="play"><!----><svg
-                            width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"
-                            class="ng-star-inserted">
-                            <path
-                                d="M1.33203 3.9987C1.33203 2.74162 1.33203 2.11308 1.72256 1.72256C2.11308 1.33203 2.74162 1.33203 3.9987 1.33203C5.25578 1.33203 5.88432 1.33203 6.27484 1.72256C6.66536 2.11308 6.66536 2.74162 6.66536 3.9987V11.9987C6.66536 13.2558 6.66536 13.8843 6.27484 14.2748C5.88432 14.6654 5.25578 14.6654 3.9987 14.6654C2.74162 14.6654 2.11308 14.6654 1.72256 14.2748C1.33203 13.8843 1.33203 13.2558 1.33203 11.9987V3.9987Z"
-                                fill="#042CB0"></path>
-                            <path
-                                d="M9.33203 3.9987C9.33203 2.74162 9.33203 2.11308 9.72256 1.72256C10.1131 1.33203 10.7416 1.33203 11.9987 1.33203C13.2558 1.33203 13.8843 1.33203 14.2748 1.72256C14.6654 2.11308 14.6654 2.74162 14.6654 3.9987V11.9987C14.6654 13.2558 14.6654 13.8843 14.2748 14.2748C13.8843 14.6654 13.2558 14.6654 11.9987 14.6654C10.7416 14.6654 10.1131 14.6654 9.72256 14.2748C9.33203 13.8843 9.33203 13.2558 9.33203 11.9987V3.9987Z"
-                                fill="#042CB0"></path>
-                        </svg><!----></button></div>
-            </div>
-        </div>
-    </div>
-</section>
-
-
-
-
-
-
-
-
-
-
