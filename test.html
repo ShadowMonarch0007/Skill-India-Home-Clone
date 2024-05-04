@@ -71,6 +71,8 @@
                 </div>
             </div>
         </div>
+        <button id="toggleCarousel" class="carousel-control-play" type="button"
+            data-bs-target="carouselExampleInterval"><i class="fa fa-pause"></i></button>
         <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval"
             data-bs-slide="prev">
             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -82,75 +84,155 @@
             <span class="visually-hidden">Next</span>
         </button>
     </div>
-    <i class="kw kw-arrow-narrow-right"></i>
-
-    <div tabindex="0" class="services-card orange-card">
-        <div class="service-card-inner">
-            <div class="services-card-header">
-                <h4> Not sure where to begin? </h4>
-                <div class="quetion-img"><img src="./../../../../assets/new-ux-img/discovery-home/question-icon.svg"
-                        alt="question" class="img-fluid"></div>
-            </div>
-            <h4> Answer a few simple questions and we will help you. </h4>
-            <h3> What is your highest education level? </h3>
-            <div class="services-select-input"><mat-form-field appearance="outline"
-                    class="mat-form-field w-100 ng-tns-c72-8 mat-primary mat-form-field-type-mat-select mat-form-field-appearance-outline mat-form-field-can-float ng-valid ng-star-inserted mat-form-field-should-float ng-touched ng-dirty">
-                    <div class="mat-form-field-wrapper ng-tns-c72-8">
-                        <div class="mat-form-field-flex ng-tns-c72-8">
-                            <div class="mat-form-field-outline ng-tns-c72-8 ng-star-inserted">
-                                <div class="mat-form-field-outline-start ng-tns-c72-8" style="width: 0px;"></div>
-                                <div class="mat-form-field-outline-gap ng-tns-c72-8" style="width: 0px;"></div>
-                                <div class="mat-form-field-outline-end ng-tns-c72-8"></div>
-                            </div>
-                            <div
-                                class="mat-form-field-outline mat-form-field-outline-thick ng-tns-c72-8 ng-star-inserted">
-                                <div class="mat-form-field-outline-start ng-tns-c72-8" style="width: 0px;"></div>
-                                <div class="mat-form-field-outline-gap ng-tns-c72-8" style="width: 0px;"></div>
-                                <div class="mat-form-field-outline-end ng-tns-c72-8"></div>
-                            </div><!----><!----><!---->
-                            <div class="mat-form-field-infix ng-tns-c72-8"><mat-select role="combobox"
-                                    aria-autocomplete="none" aria-haspopup="true"
-                                    class="mat-select ng-tns-c75-9 ng-tns-c72-8 ng-valid ng-star-inserted ng-touched ng-dirty"
-                                    aria-labelledby="mat-select-value-1" id="mat-select-0" tabindex="0"
-                                    aria-expanded="false" aria-required="false" aria-disabled="false"
-                                    aria-invalid="false">
-                                    <div cdk-overlay-origin="" class="mat-select-trigger ng-tns-c75-9">
-                                        <div class="mat-select-value ng-tns-c75-9" id="mat-select-value-1"><!----><span
-                                                class="mat-select-value-text ng-tns-c75-9 ng-star-inserted"><span
-                                                    class="mat-select-min-line ng-tns-c75-9 ng-star-inserted">Below 10th
-                                                    Standard</span><!----><!----></span><!----></div>
-                                        <div class="mat-select-arrow-wrapper ng-tns-c75-9">
-                                            <div class="mat-select-arrow ng-tns-c75-9"></div>
-                                        </div>
-                                    </div><!---->
-                                </mat-select><span class="mat-form-field-label-wrapper ng-tns-c72-8"><!----></span>
-                            </div>
-                            <div class="mat-form-field-suffix ng-tns-c72-8 ng-star-inserted"><button matsuffix=""
-                                    mat-icon-button="" aria-label="Clear"
-                                    class="mat-focus-indicator mat-icon-button mat-button-base ng-tns-c72-8"
-                                    tabindex="0"><span class="mat-button-wrapper"><svg width="24" height="24"
-                                            viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <g style="mix-blend-mode: luminosity;">
-                                                <path d="M6 9L12 15L18 9" stroke="black" stroke-width="1.5"
-                                                    stroke-linecap="round" stroke-linejoin="round"></path>
-                                            </g>
-                                        </svg></span><span matripple=""
-                                        class="mat-ripple mat-button-ripple mat-button-ripple-round"></span><span
-                                        class="mat-button-focus-overlay"></span></button></div><!---->
-                        </div><!---->
-                        <div class="mat-form-field-subscript-wrapper ng-tns-c72-8"><!---->
-                            <div class="mat-form-field-hint-wrapper ng-tns-c72-8 ng-trigger ng-trigger-transitionMessages ng-star-inserted"
-                                style="opacity: 1; transform: translateY(0%);"><!---->
-                                <div class="mat-form-field-hint-spacer ng-tns-c72-8"></div>
-                            </div><!---->
-                        </div>
-                    </div>
-                </mat-form-field></div>
-            <div class="services-footer-btn">
-                <p>1/5</p><!----><button class="btn-primary-special" tabindex="0"> Next </button>
-            </div>
-        </div>
     </div>
+
+
+
+
+
 </body>
 
 </html>
+<script>
+    $(function () {
+        /* Initialize Carousel */
+        var paused = 0;
+        $('#carouselExampleIndicators').carousel({
+            interval: 1000,
+            pause: 0
+        });
+
+        /* Play trigger */
+        $('#toggleCarousel').click(function () {
+            var state = (paused) ? 'cycle' : 'pause';
+            paused = (paused) ? 0 : 1;
+            $('#myCarousel').carousel(state);
+            $(this).find('i').toggleClass('fa-play fa-pause');
+        });
+    });
+
+</script>
+<style>
+    .carousel-control-play {
+        height: 20px;
+        width: 20px;
+    }
+</style>
+
+
+
+
+
+
+
+<section class="testimonial-contain">
+    <div class="container">
+        <div class="flex-row">
+            <div data-aos="fade-up" data-aos-delay="400" data-aos-duration="1000"
+                class="testimonial-img aos-init aos-animate"><img
+                    src="./../../../../assets/new-ux-img/discovery-home/testimonial/testimonial1-img.svg"
+                    alt="testimonial" class="img-fluid"></div>
+            <div data-aos="fade-up" data-aos-delay="400" data-aos-duration="1000"
+                class="testimonial-slider aos-init aos-animate">
+                <h2 class="section-title"> Success stories </h2><ngx-slick-carousel
+                    class="carousel testimonial-card-slider slick-initialized slick-slider slick-dotted">
+                    <div class="slick-list draggable">
+                        <div class="slick-track"
+                            style="opacity: 1; width: 15000px; transform: translate3d(0px, 0px, 0px);">
+                            <div ngxslickitem="" class="slide slick-slide ng-star-inserted slick-current slick-active"
+                                data-slick-index="0" aria-hidden="false" tabindex="0" role="tabpanel"
+                                id="slick-slide160" aria-describedby="slick-slide-control160"><app-service-offering
+                                    _nghost-ukt-c313="">
+                                    <div _ngcontent-ukt-c313="" tabindex="0" class="testimonial-video-card"><img
+                                            _ngcontent-ukt-c313=""
+                                            src="./../../../../../../assets/new-ux-img/discovery-home/testimonial/1.jpg"
+                                            alt="Skill India">
+                                        <div _ngcontent-ukt-c313="" class="overlay"></div>
+                                        <div _ngcontent-ukt-c313="" class="video-icon"><svg _ngcontent-ukt-c313=""
+                                                width="60" height="60" viewBox="0 0 60 60" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <g _ngcontent-ukt-c313="" id="play_circle_outline_black_24dp">
+                                                    <path _ngcontent-ukt-c313="" id="Shape" fill-rule="evenodd"
+                                                        clip-rule="evenodd"
+                                                        d="M29.6108 5.45312C15.8467 5.45312 4.67578 16.624 4.67578 30.3882C4.67578 44.1523 15.8467 55.3233 29.6108 55.3233C43.375 55.3233 54.5459 44.1523 54.5459 30.3882C54.5459 16.624 43.375 5.45312 29.6108 5.45312ZM24.625 41.6134L39.586 30.3927L24.625 19.1719V41.6134ZM9.66406 30.3856C9.66406 41.3819 18.6158 50.3336 29.6121 50.3336C40.6085 50.3336 49.5602 41.3819 49.5602 30.3856C49.5602 19.3892 40.6085 10.4375 29.6121 10.4375C18.6158 10.4375 9.66406 19.3892 9.66406 30.3856Z"
+                                                        fill="white"></path>
+                                                </g>
+                                            </svg></div>
+                                    </div>
+                                </app-service-offering></div>
+                            <div ngxslickitem="" class="slide slick-slide ng-star-inserted" data-slick-index="1"
+                                aria-hidden="true" tabindex="-1" role="tabpanel" id="slick-slide161"
+                                aria-describedby="slick-slide-control161"><app-service-offering _nghost-ukt-c313="">
+                                    <div _ngcontent-ukt-c313="" tabindex="0" class="testimonial-video-card"><img
+                                            _ngcontent-ukt-c313=""
+                                            src="./../../../../../../assets/new-ux-img/discovery-home/testimonial/2.jpg"
+                                            alt="Apprenticeships">
+                                        <div _ngcontent-ukt-c313="" class="overlay"></div>
+                                        <div _ngcontent-ukt-c313="" class="video-icon"><svg _ngcontent-ukt-c313=""
+                                                width="60" height="60" viewBox="0 0 60 60" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <g _ngcontent-ukt-c313="" id="play_circle_outline_black_24dp">
+                                                    <path _ngcontent-ukt-c313="" id="Shape" fill-rule="evenodd"
+                                                        clip-rule="evenodd"
+                                                        d="M29.6108 5.45312C15.8467 5.45312 4.67578 16.624 4.67578 30.3882C4.67578 44.1523 15.8467 55.3233 29.6108 55.3233C43.375 55.3233 54.5459 44.1523 54.5459 30.3882C54.5459 16.624 43.375 5.45312 29.6108 5.45312ZM24.625 41.6134L39.586 30.3927L24.625 19.1719V41.6134ZM9.66406 30.3856C9.66406 41.3819 18.6158 50.3336 29.6121 50.3336C40.6085 50.3336 49.5602 41.3819 49.5602 30.3856C49.5602 19.3892 40.6085 10.4375 29.6121 10.4375C18.6158 10.4375 9.66406 19.3892 9.66406 30.3856Z"
+                                                        fill="white"></path>
+                                                </g>
+                                            </svg></div>
+                                    </div>
+                                </app-service-offering></div>
+                            <div ngxslickitem="" class="slide slick-slide ng-star-inserted" data-slick-index="2"
+                                aria-hidden="true" tabindex="-1" role="tabpanel" id="slick-slide162"
+                                aria-describedby="slick-slide-control162"><app-service-offering _nghost-ukt-c313="">
+                                    <div _ngcontent-ukt-c313="" tabindex="0" class="testimonial-video-card"><img
+                                            _ngcontent-ukt-c313=""
+                                            src="./../../../../../../assets/new-ux-img/discovery-home/testimonial/3.jpg"
+                                            alt="Skill Courses">
+                                        <div _ngcontent-ukt-c313="" class="overlay"></div>
+                                        <div _ngcontent-ukt-c313="" class="video-icon"><svg _ngcontent-ukt-c313=""
+                                                width="60" height="60" viewBox="0 0 60 60" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <g _ngcontent-ukt-c313="" id="play_circle_outline_black_24dp">
+                                                    <path _ngcontent-ukt-c313="" id="Shape" fill-rule="evenodd"
+                                                        clip-rule="evenodd"
+                                                        d="M29.6108 5.45312C15.8467 5.45312 4.67578 16.624 4.67578 30.3882C4.67578 44.1523 15.8467 55.3233 29.6108 55.3233C43.375 55.3233 54.5459 44.1523 54.5459 30.3882C54.5459 16.624 43.375 5.45312 29.6108 5.45312ZM24.625 41.6134L39.586 30.3927L24.625 19.1719V41.6134ZM9.66406 30.3856C9.66406 41.3819 18.6158 50.3336 29.6121 50.3336C40.6085 50.3336 49.5602 41.3819 49.5602 30.3856C49.5602 19.3892 40.6085 10.4375 29.6121 10.4375C18.6158 10.4375 9.66406 19.3892 9.66406 30.3856Z"
+                                                        fill="white"></path>
+                                                </g>
+                                            </svg></div>
+                                    </div>
+                                </app-service-offering></div>
+                        </div>
+                    </div><!---->
+                    <ul class="slick-dots" style="" role="tablist">
+                        <li class="slick-active" role="presentation"><button type="button" role="tab"
+                                id="slick-slide-control160" aria-controls="slick-slide160" aria-label="1 of 3"
+                                tabindex="0" aria-selected="true">1</button></li>
+                        <li role="presentation" class=""><button type="button" role="tab" id="slick-slide-control161"
+                                aria-controls="slick-slide161" aria-label="2 of 3" tabindex="-1">2</button></li>
+                        <li role="presentation" class=""><button type="button" role="tab" id="slick-slide-control162"
+                                aria-controls="slick-slide162" aria-label="3 of 3" tabindex="-1">3</button></li>
+                    </ul>
+                </ngx-slick-carousel>
+                <div class="play-pause"><button type="button" title="Play" tabindex="-1" class="play"><!----><svg
+                            width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"
+                            class="ng-star-inserted">
+                            <path
+                                d="M1.33203 3.9987C1.33203 2.74162 1.33203 2.11308 1.72256 1.72256C2.11308 1.33203 2.74162 1.33203 3.9987 1.33203C5.25578 1.33203 5.88432 1.33203 6.27484 1.72256C6.66536 2.11308 6.66536 2.74162 6.66536 3.9987V11.9987C6.66536 13.2558 6.66536 13.8843 6.27484 14.2748C5.88432 14.6654 5.25578 14.6654 3.9987 14.6654C2.74162 14.6654 2.11308 14.6654 1.72256 14.2748C1.33203 13.8843 1.33203 13.2558 1.33203 11.9987V3.9987Z"
+                                fill="#042CB0"></path>
+                            <path
+                                d="M9.33203 3.9987C9.33203 2.74162 9.33203 2.11308 9.72256 1.72256C10.1131 1.33203 10.7416 1.33203 11.9987 1.33203C13.2558 1.33203 13.8843 1.33203 14.2748 1.72256C14.6654 2.11308 14.6654 2.74162 14.6654 3.9987V11.9987C14.6654 13.2558 14.6654 13.8843 14.2748 14.2748C13.8843 14.6654 13.2558 14.6654 11.9987 14.6654C10.7416 14.6654 10.1131 14.6654 9.72256 14.2748C9.33203 13.8843 9.33203 13.2558 9.33203 11.9987V3.9987Z"
+                                fill="#042CB0"></path>
+                        </svg><!----></button></div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+
+
+
+
+
+
+

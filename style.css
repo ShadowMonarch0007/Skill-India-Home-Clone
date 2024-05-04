@@ -56,6 +56,20 @@ select:focus{
 body{
 
 }
+.skill-india-banner{
+    width: 100%;
+}
+.web-cover{
+    width: 100%;
+}
+.web-cover-4k,
+.web-cover-2k,
+.laptop-cover,
+.small-laptop-cover,
+.tablet-cover,
+.mobile-cover{
+    display: none;
+}
 #second{
     padding-bottom: 3rem;
 }
@@ -396,6 +410,18 @@ button.regi:hover{
     text-decoration: none;
     word-break: break-word;
 }
+
+#fifth{
+    margin-top: 7rem;
+    background-color: yellow;
+    /* background: url("https://www.skillindiadigital.gov.in/testimonial-bg.f5a7a75e9f3d628b.svg"); */
+    background-repeat: no-repeat;
+}
+.testflex{
+    margin: 0 10%;
+    width: 80%;
+    display: flex;
+}
 .download{
     margin: 0 15%;
     width: 70%;
@@ -617,6 +643,27 @@ footer{
 }
 
 @media only screen and (max-width:1400px){
+    .mobile-cover{
+        width: 100% !important;
+        display: block;
+    }
+    .web-cover-4k,
+    .web-cover-2k,
+    .laptop-cover,
+    .small-laptop-cover,
+    .tablet-cover,
+    .web-cover{
+        display: none !important;
+    }
+    .secthrd{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .opporcardslist{
+        width: 100%;
+        overflow-x: scroll;
+        overflow-y: hidden;
+    }
     .carthings{
         flex-direction: column;
     }
@@ -744,3 +791,4 @@ footer{
         margin-left: 2.5%;
     }
 }
+
