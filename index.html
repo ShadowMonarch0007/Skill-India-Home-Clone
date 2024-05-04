@@ -44,7 +44,7 @@
                         A
                     </div>
                 </div>
-                <div class="contrast" onclick="document.getElementsByTagName('img').style.filter='grayscale(100%)'">
+                <div class="contrast" onclick="myFunction()">
                     <div class="conticon">
                         <i class="fa-solid fa-circle-half-stroke fa-lg" style="color: #cccccc;"></i>
                     </div>
@@ -805,5 +805,10 @@
             </div>
         </div>
     </footer>
+    <script>
+        function myFunction() {
+          document.getElementsByTagName("img").style.filter = "grayscale(100%)";
+        }
+        </script>
     <script src="https://kit.fontawesome.com/3d04685e57.js" crossorigin="anonymous"></script>
 </body>
