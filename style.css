@@ -318,6 +318,229 @@ body{
 .mobile-cover{
     display: none;
 }
+#first{
+    /* transform: translateY(-25%); */
+}
+#fstjx{
+    display: none;
+}
+#fstskilc{
+    display: none;
+}
+.first-container{
+    margin: 5% 10%;
+    width: 80%;
+}
+.fst-cntnr-1{
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+}
+.fst-cntnr-1 h1{
+    font-size: 22px;
+    font-family: sans-serif;
+    width: 93px;
+    font-weight: 400;
+    margin-left: 10%;
+}
+.fst-cntnr-1 span{
+    font-size: 40px;
+    font-family: sans-serif;
+    /* width: 93px; */
+    font-weight: 700;
+    color: #042CB0;
+    margin-right: 10%;
+}
+.fst-emp i{
+    transform: translateX(-170px) translateY(57px);
+}
+.fst-emp{
+    width: 355px;
+    height: 105px;
+    border-bottom: solid #DF6E12 0.3rem;
+    border-radius: 1rem;
+    display: flex;
+    justify-content: space-between;
+    color: #333333;
+    align-items: center;
+    background-color: #fdf2e9;
+}
+.fst-norm{
+    width: 355px;
+    height: 105px;
+    border: solid #cccccc 0.1rem;
+    border-radius: 1rem;
+    display: flex;
+    justify-content: space-between;
+    color: #666666;
+    align-items: center;
+}
+.fst-cntnr-2{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    margin: 5% 0;
+}
+.fst-cntnr-2 h4{
+    font-family: sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    color: #333333;
+    line-height: 19px;
+    margin-left: 3%;
+    margin-top: 1rem;
+}
+.fst-cntnr-2-search{
+    display: flex;
+    width: 660px;
+    height: 50px;
+    justify-content: space-evenly;
+    box-shadow: 0 0 20px #666666;
+    border-radius: 0.5rem;
+    transform: translateX(-5%);
+}
+.fst-cntnr-2-search:hover{
+    border: solid #000000 0.1rem;
+}
+.fst-cntnr-2-search svg{
+    margin-top: 1rem;
+}
+.fst-cntnr-2-search button{
+    font-size: 16px;
+    font-weight: 700;
+    font-family: sans-serif;
+    color: #ffffff;
+    background-color: #DF6E12;
+    text-transform: uppercase;
+    height: 38px;
+    padding: 0 1rem;
+    border-radius: 10px;
+    text-decoration: none;
+    border: none;
+    height: 40px;
+    width: 124px;
+    margin: 5px -5px;
+}
+.fst-cntnr-2-search input{
+    outline: none;
+    border: none;
+    width: 480px;
+
+}
+.fst-cntnr-3{
+    display: flex;
+    margin: 5% 0;
+    width: 100%;
+    justify-content: space-evenly;
+}
+.sccard{
+    height: 235px;
+    width: 250px;
+    background: #00000080;
+    border-radius: 1rem;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.3s ease-out;
+    background: radial-gradient(#111 50%, #000 100%);
+}
+.sccard img{
+    max-width: 100%;
+    height: 250px;
+    vertical-align: middle;
+    border-style: none;
+    position: absolute;
+    opacity: 0.5;
+}
+.sccard:hover{
+    img{ 
+    transform: scale(1.3);
+    transition: all 0.7s ease-out;
+    }
+}
+.online-tag p{
+    font-family: sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    height: 33px;
+    width: 70px;
+    color: #ffffff;
+    background: #042CB0;
+    border-radius: 0 10px;
+    padding-top: 0.3rem;
+    text-align: center;
+    transform: translateX(180px);
+}
+.carddtails{
+    margin: -10% 10%;
+    position: relative;
+}
+.cardtail h2{
+    max-width: 162px;
+    margin-bottom: 25px;
+    font-size: 18px;
+    line-height: 22px;
+    flex-grow: 1;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    height: 45px;
+    color: #FFFFFF;
+}
+.sccard svg{
+    height: 16px;
+    width: 16px;
+
+}
+.cardtime p,
+.card-count p{
+    margin-left: 10px;
+}
+.cardtime{
+    display: flex;
+    color: #FFFFFF;
+    font-size: 12px;
+    font-weight: 700;
+    margin-bottom: -5%;
+    path{
+        fill: #FFFFFF;
+    }
+}
+.card-count{
+    display: flex;
+    color: #FFFFFF;
+    font-size: 12px;
+    font-weight: 700;
+    path{
+        fill: #FFFFFF;
+    }
+}
+.card-view{
+    display: flex;
+    font-size: 14px;
+    font-family: sans-serif;
+    font-weight: 700;
+    text-transform: capitalize;
+    color: #FFFFFF;
+}
+.card-view svg{
+    margin-top: 0.1rem;
+    margin-left: 0.5rem;
+    height: 20px;
+    width: 20px;
+}
+.card-rating span{
+    font-size: 14px;
+    font-family: sans-serif;
+    font-weight: 700;
+    color: #FFFFFF;
+    margin-left: 0.4rem;
+}
+.card-rating{
+    margin-bottom: 1rem;
+}
 #second{
     padding-bottom: 3rem;
 }
