@@ -177,7 +177,7 @@
                     </a>
                 </div>
                 <div class="more">
-                    <a onclick="document.getElementById('morebox').style.display='block'">
+                    <a onclick="showmore()">
                         <svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path
                                 d="M8.39323 9.25391C8.76142 9.25391 9.0599 8.95543 9.0599 8.58724C9.0599 8.21905 8.76142 7.92057 8.39323 7.92057C8.02504 7.92057 7.72656 8.21905 7.72656 8.58724C7.72656 8.95543 8.02504 9.25391 8.39323 9.25391Z"
@@ -201,7 +201,7 @@
                     </div>
                 </div>
                 <div class="searchbar">
-                    <a onclick="document.getElementById('showsearchbox').style.display='block'">
+                    <a onclick="show(b)">
                         <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path
                                 d="M17.5 17.5L13.875 13.875M15.8333 9.16667C15.8333 12.8486 12.8486 15.8333 9.16667 15.8333C5.48477 15.8333 2.5 12.8486 2.5 9.16667C2.5 5.48477 5.48477 2.5 9.16667 2.5C12.8486 2.5 15.8333 5.48477 15.8333 9.16667Z"
@@ -809,10 +809,6 @@
             </div>
         </div>
     </footer>
-    <script>
-        function myFunction() {
-          document.getElementsByTagName("img").style.filter = "grayscale(100%)";
-        }
-        </script>
+    <script src="function.js"></script>
     <script src="https://kit.fontawesome.com/3d04685e57.js" crossorigin="anonymous"></script>
 </body>

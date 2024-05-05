@@ -196,7 +196,7 @@ button.navlogi{
     }
 }
 .vnavbar{
-    transform: translateY(7rem) translateX(1470px);
+    transform: translateY(7rem) translateX(98%);
     position: fixed;
 }
 .call a,
@@ -274,7 +274,7 @@ button.navlogi{
 .dashide{
     max-height: 200px;
     overflow-x: auto;
-    width: 250px;
+    width: 17%;
 }
 .imp-links:hover{
     height: 170px !important;
