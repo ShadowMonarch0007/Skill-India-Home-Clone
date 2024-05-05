@@ -57,7 +57,7 @@ header{
     font-size: 14px;
     color: #cccccc;
 }
-.fa-greater-than{
+.hdr .fa-greater-than{
     rotate: 90deg;
     /* transform: translateX(2px); */
 }
@@ -296,6 +296,9 @@ button.navlogi{
 .announcement:hover{
     transform: translateX(-200px);
     transition: 0.5s;
+}
+.hamnavbar{
+    display: none;
 }
 body{
 
@@ -902,6 +905,145 @@ footer{
     .navbar,
     .vnavbar{
         display: none !important;
+    }
+    .hamnavbar{
+        display: block !important;
+    }
+    .hamnavitem,
+    .hamnavitem1,
+    .hamnavitem2{
+        display: flex;
+        justify-content: space-evenly;
+    }
+    .hamnavitem{
+        margin: 0.7rem 5%;
+        width: 90%;
+    }
+    .hamnavitem1{
+        width: 50%;
+        margin-right: 10%;
+    }
+    .hamnavitem2{
+        width: 40%;
+    }
+    .show-hambar-items{
+        display: flex;
+        flex-direction: column;
+    }
+    .show-hambar-item2{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        margin: 3rem 7%;
+        width: 86%;
+    }
+    .hamnavbar a{
+        text-decoration: none;
+    }
+    .ham-home,
+    .ham-scheme,
+    .ham-recc,
+    .ham-skillc,
+    .ham-jx,
+    .ham-sc,
+    .ham-sim,
+    .ham-more{
+        display: flex;
+        /* justify-content: space-between; */
+        border-bottom: solid #666666 0.01rem;
+        margin-top: 1rem;
+    }
+    .show-hambar-item2 span{
+        margin-left: 10%;
+        width: 65%;
+        margin-bottom: 1.5rem;
+        color: #666666;
+    }
+    .show-hambar-item2 svg{
+        height: 24px;
+        width: 24px;
+        margin-left: 5%;
+    }
+    .show-hambar-item2 i{
+        margin-top: 0.5rem;
+    }
+    .accounts-popup{
+        background: #ffffff;
+        position: absolute;
+        transform: translateX(-70%) translateY(20%);
+        box-shadow: 0 0 20px 2px #66666665;
+        border-radius: 0.3rem;
+        padding: 0.8rem 0.8rem 0 0.8rem;
+        display: none;
+    }
+    .accounts-popup button{
+        width: 96px;
+        height: 32px;
+        margin-bottom: 0.8rem;
+    }
+    .show-hambar-items{
+        width: 80%;
+        display: flex;
+        justify-content: left;
+        position: absolute;
+        background: #ffffff;
+        transform: translateX(-10%);
+        top: 0;
+        border-radius: 0.5rem;
+        height: 100%;
+        overflow-y: auto;
+        display: none;
+    }
+    .acbtn{
+        display: flex;
+    }
+    .acbtn button{
+        margin:  0 0.5rem;
+    }
+    .show-hambar-item1{
+        width: 90%;
+        display: flex;
+        margin: 1rem 0;
+        justify-content: space-between;
+    }
+    .hamnavitem1 .cross{
+        margin-left: 1rem;
+    }
+    .show-hambar-item3{
+        display: flex;
+        flex-direction: column;
+        margin: -10% 10%;
+        width: 80%;
+        padding-bottom: 5%;
+    }
+    .show-hambar-item3 a{
+        text-decoration: none;
+    }
+    .show-hambar-item3 span{
+        color: #042CB0;
+        width: 70%;
+        font-size: 14px;
+    }
+    .show-hambar-item3 svg{
+        margin-left: 5%;
+        height: 20px;
+        width: 20px;
+    }
+    .show-hambar-item3 i{
+        margin-right: 5%;
+    }
+    .ham-call,
+    .ham-lr,
+    .ham-impl,
+    .ham-dash,
+    .ham-ann{
+        background-color: #042cb02c;
+        margin: 0.5rem 0;
+        height: 3rem;
+        border-radius: 0.5rem;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
     }
     .mobile-cover{
         width: 100% !important;
