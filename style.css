@@ -828,6 +828,12 @@ body {}
     display: flex;
     justify-content: center;
 }
+.registerbuttonmob{
+    margin-top: 1rem;
+    display: flex;
+    justify-content: center;
+    display: none;
+}
 
 button.regi {
     font-size: 16px;
@@ -1728,12 +1734,14 @@ footer {
         align-items: center;
         justify-content: space-between;
     }
-
+    #register-roles{
+    }
     .register-role-page {
         height: 690px;
         width: 330px;
         margin-top: -30%;
-        left: 9%;
+        left: -9%;
+        display: none;
     }
 
     .register-role-header {
@@ -1741,6 +1749,9 @@ footer {
         align-items: flex-start;
         justify-content: center;
         margin-bottom: 20px;
+    }
+    .register-role-header svg{
+        transform: translateX(60px) translateY(-10px);
     }
 
     .role-containts h1 {
@@ -1956,9 +1967,18 @@ footer {
     }
 
     #second {
+    }
+    .basicardslist{
+        width: 100%;
+        overflow-x: auto;
+    }
+    .registerbutton{
         display: none;
     }
-
+    .registerbuttonmob{
+        margin-left: 25%;
+        display: block;
+    }
     .secthrd {
         display: flex;
         flex-direction: column-reverse;
