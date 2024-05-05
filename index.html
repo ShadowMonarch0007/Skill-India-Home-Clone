@@ -177,7 +177,7 @@
                     </a>
                 </div>
                 <div class="more">
-                    <a onclick="showmore()">
+                    <a onclick="show('morebox')">
                         <svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path
                                 d="M8.39323 9.25391C8.76142 9.25391 9.0599 8.95543 9.0599 8.58724C9.0599 8.21905 8.76142 7.92057 8.39323 7.92057C8.02504 7.92057 7.72656 8.21905 7.72656 8.58724C7.72656 8.95543 8.02504 9.25391 8.39323 9.25391Z"
@@ -201,7 +201,7 @@
                     </div>
                 </div>
                 <div class="searchbar">
-                    <a onclick="show(showsearchbox)">
+                    <a onclick="show('showsearchbox')">
                         <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path
                                 d="M17.5 17.5L13.875 13.875M15.8333 9.16667C15.8333 12.8486 12.8486 15.8333 9.16667 15.8333C5.48477 15.8333 2.5 12.8486 2.5 9.16667C2.5 5.48477 5.48477 2.5 9.16667 2.5C12.8486 2.5 15.8333 5.48477 15.8333 9.16667Z"
@@ -222,7 +222,7 @@
                                 placeholder="Search Skill Courses, Skill Centres and Opportunities"
                                 data-placeholder="Search Skill Courses, Skill Centres and Opportunities"
                                 aria-invalid="false" aria-required="false">
-                            <svg onclick="document.getElementById('showsearchbox').style.display='none'" width="20"
+                            <svg onclick="hide('showsearchbox')" width="20"
                                 height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <g clip-path="url(#clip0_6621_64739)">
                                     <path
@@ -255,7 +255,7 @@
                     </a>
                 </div>
                 <div class="nav-register">
-                    <div class="registerbtn">
+                    <div class="registerbtn" onclick="showregibtn('register-roles')">
                         <button class="navregi">Register</button>
                     </div>
                 </div>
@@ -1320,7 +1320,42 @@
                 </div>
             </div>
             <div class="registerbutton">
-                <button class="regi">Register</button>
+                <button class="regi" onclick="showregibtn('register-roles')">Register</button>
+                <div id="register-roles" class="register-role-page">
+                    <div class="register-role-header">
+                        <img src="logo/skill-india-logo.svg" alt="">
+                        <svg onclick="hideregibtn('register-roles')" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M18 6L6 18M6 6L18 18" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+                    </div>
+                    <div class="role-containts">
+                        <h1> Welcome to Skill India Digital Hub (SIDH) </h1>
+                        <h2> A platform to meet all your skilling needs digitally anytime anywhere </h2>
+                        <h5 class="d-block d-lg-none"> Select a role to explore more... </h5>
+                    </div>
+                    <div class="role-cards">
+                        <div class="role-card">
+                            <div class="learner-svg">
+                                <img src="logo/new-student.svg" alt="">
+                            </div>
+                            <div class="learner-dtails">
+                                <h3>Learner/Participant</h3>
+                                <h5> Learn from several Skill Courses, find Skill Centres near you and explore the Job Exchange for career growth. </h5>
+                            </div>
+                        </div>
+                        <div class="role-card">
+                            <div class="learner-svg">
+                                <img src="logo/new-student.svg" alt="">
+                            </div>
+                            <div class="learner-dtails">
+                                <h3>Learner/Participant</h3>
+                                <h5> Learn from several Skill Courses, find Skill Centres near you and explore the Job Exchange for career growth. </h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="role-terms-condition">
+                        <p class="d-none d-lg-block"> By choosing to continue, you agree to accept all applicable 
+                            <a href="https://www.skillindiadigital.gov.in/terms-condition"> <span tabindex="0"> Terms &amp; Conditions </span></a> and <a href="https://www.skillindiadigital.gov.in/privacy-policy"> <span  tabindex="0"> Privacy Policy </span></a></p>
+                    </div>
+                </div>
             </div>
         </section>
         <section id="third">

@@ -18,114 +18,70 @@
 <body>
 
     <!-- Example Code -->
+    <div class="register-roles">
+        
+    </div>
 
-
-    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
-        <div class="carousel-indicators">
-            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
-                aria-current="true" aria-label="Slide 1"></button>
-            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
-                aria-label="Slide 2"></button>
-            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
-                aria-label="Slide 3"></button>
-        </div>
-        <div class="carousel-inner">
-            <div class="carousel-item active">
-                <!-- Button trigger modal -->
-                <div class="vidthumbthings">
-                    <div class="vidthumb">
-                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                            <img src="logo/fifth1.jpg" alt="">
-                        </button>
-                    </div>
     
-                    <!-- Modal -->
-                    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
-                        aria-hidden="true">
-                        <div class="modal-dialog">
-                            <div class="modal-content">
-                                <div class="modal-header">
-                                    <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
-                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
-                                        aria-label="Close"></button>
-                                </div>
-                                <div class="modal-body">
-                                    ...
-                                </div>
-                                <div class="modal-footer">
-                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                                    <button type="button" class="btn btn-primary">Save changes</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="carousel-item" data-bs-interval="2000">
-                <div class="carthings">
-                    <div class="carimg">
-                        <img src="logo/discovery-service-icon1.svg" alt="">
-                    </div>
-                    <div class="cardesc">
-                        <h2> Start, change, upgrade your career </h2>
-                        <p> Find jobs and apprenticeships (on the job training) </p>
-                        <a href="https://www.skillindiadigital.gov.in/opportunities">
-                            <button> Learn More </button>
-                        </a>
-                    </div>
-                </div>
-            </div>
-            <div class="carousel-item " data-bs-interval="10000">
-                <div class="carthings">
-                    <div class="carimg">
-                        <img src="logo/learn-more-img1.svg" alt="">
-                    </div>
-                    <div class="cardesc">
-                        <h2> Look for a Skill Centre near you </h2>
-                        <p> Join skills courses and find opportunities based on your location </p>
-                        <a href="https://www.skillindiadigital.gov.in/training-centres">
-                            <button> Learn More </button>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval"
-            data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval"
-            data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-        </button>
-    </div>
-    </div>
 
 <style>
-    .carousel-inner .vidthumbthings button{
-        background-color: transparent;
-        outline: none;
-        border: none;
-        /* text-decoration: none; */
-    }
-    .vidthumb:hover{
-        transform: scale(1.1);
-        position: relative;
-        transition: all 1s ease;
-    }
-    .vidthumb img{
-        height: 320px;
-        width: 100%;
-    }
-    .carousel-inner{
-        height: 320px;
-        width: 572px;
-    }
-    #carouselExampleIndicators{
-        height: 320px;
-        width: 750px;
+    
+    @media only screen and (max-width:1400px){
+        .register-role-page{
+            height: 690px;
+            width: 330px;
+            margin-top: -30%;
+            left: 9%;
+        }
+        .register-role-header{
+            display: flex;
+        align-items: flex-start;
+        justify-content: center;
+        margin-bottom: 20px;
+        }
+        .role-containts h1{
+            font-size: 20px;
+        line-height: inherit;
+        margin-bottom: 10px;
+        color: #042cb0;
+        }
+        .role-containts h2{
+            font-size: 12px;
+        line-height: inherit;
+        margin: 0 20px;
+        }
+        .role-containts h5{
+            font-size: var(--font-16);
+        line-height: 19px;
+        margin-bottom: 4px;
+        margin-top: 50px;
+        }
+        .role-cards{
+            flex-direction: column;
+            width: 290px;
+        height: 143px;
+        transform: translateX(-25px);
+        }
+        .role-card{
+            width: 100%;
+            display: flex;
+    align-items: center;
+    height: 100%;
+        }
+        .role-card img{
+        height: 86px;
+        margin-right: 10px;
+        margin-bottom: 0;
+        }
+        .role-card h3{
+            font-size: 16px;
+        }
+        .role-card h5{
+            font-size: 12px;
+        }
+        .role-terms-condition{
+            font-size: 12px;
+        }
     }
 </style>
 
