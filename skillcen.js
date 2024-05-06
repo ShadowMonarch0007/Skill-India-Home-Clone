@@ -1,9 +1,8 @@
-const searchInput = document.getElementById('skill-centre-search');
-const searchResults = document.getElementById('skill-centre-search-result');
+const searchInput2 = document.getElementById('skill-centre-search');
+const searchResults2 = document.getElementById('skill-centre-search-result');
 
 
-const data=[
-'Client Location Digital Self Learning Product',
+const data2=['Client Location Digital Self Learning Product',
 'Global Agriculture Innovation & Research institute',
 'ABBEY WEST SERVICES BARIPADA',
 'ABBEY WEST SERVICES BARIPADA',
@@ -73,29 +72,29 @@ const data=[
 'Yuva Junction Sakra',
 ];
 
-searchInput.addEventListener('input', () => {
-    const searchText = searchInput.value.toLowerCase();
-    const filteredData = data.filter(item => item.toLowerCase().includes(searchText));
+searchInput2.addEventListener('input', () => {
+    const searchText = searchInput2.value.toLowerCase();
+    const filteredData = data2.filter(item => item.toLowerCase().includes(searchText));
     
     displayResults(filteredData);
 });
 
 function displayResults(results) {
-    searchResults.innerHTML = '';
+    searchResults2.innerHTML = '';
     results.forEach(result => {
         const li = document.createElement('li');
         li.textContent = result;
-        searchResults.appendChild(li);
+        searchResults2.appendChild(li);
     });
 }
 
-searchResults.addEventListener('click', (e) => {
+searchResults2.addEventListener('click', (e) => {
     if (e.target.tagName === 'LI') {
-        searchInput.value = e.target.textContent;
-        searchResults.innerHTML = '';
+        searchInput2.value = e.target.textContent;
+        searchResults2.innerHTML = '';
     }
 });
 
 document.body.addEventListener('click',()=>{
-    searchResults.innerHTML='';
+    searchResults2.innerHTML='';
 })

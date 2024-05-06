@@ -1,8 +1,8 @@
-const searchInput = document.getElementById('skill-courses-search');
-const searchResults = document.getElementById('skill-courses-search-result');
+const searchInput1 = document.getElementById('skill-courses-search');
+const searchResults1 = document.getElementById('skill-courses-search-result');
 
-const data=[
-    'prepare',
+const data1=[
+'   prepare',
 'maintain',
 'establishing',
 'about',
@@ -155,29 +155,32 @@ const data=[
 ];
 
 
-searchInput.addEventListener('input', () => {
-    const searchText = searchInput.value.toLowerCase();
-    const filteredData = data.filter(item => item.toLowerCase().includes(searchText));
+searchInput1.addEventListener('input', () => {
+    const searchText = searchInput1.value.toLowerCase();
+    const filteredData = data1.filter(item => item.toLowerCase().includes(searchText));
     
     displayResults(filteredData);
 });
 
 function displayResults(results) {
-    searchResults.innerHTML = '';
+    searchResults1.innerHTML = '';
     results.forEach(result => {
         const li = document.createElement('li');
         li.textContent = result;
-        searchResults.appendChild(li);
+        searchResults1.appendChild(li);
     });
 }
 
-searchResults.addEventListener('click', (e) => {
+searchResults1.addEventListener('click', (e) => {
     if (e.target.tagName === 'LI') {
-        searchInput.value = e.target.textContent;
-        searchResults.innerHTML = '';
+        searchInput1.value = e.target.textContent;
+        searchResults1.innerHTML = '';
     }
 });
 
 document.body.addEventListener('click',()=>{
-    searchResults.innerHTML='';
+    searchResults1.innerHTML='';
 })
+
+
+
