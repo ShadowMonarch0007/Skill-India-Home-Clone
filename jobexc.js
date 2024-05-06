@@ -1,7 +1,7 @@
-const searchInput = document.getElementById('job-exchange-search');
-const searchResults = document.getElementById('job-exchange-search-result');
+const searchInput3 = document.getElementById('job-exchange-search');
+const searchResults3 = document.getElementById('job-exchange-search-result');
 
-const data=[
+const data3=[
 '    Hiring For Sales Executive',
 'Customer Support Specialist',
 'Caregiver',
@@ -87,29 +87,32 @@ const data=[
 'B.Voc Trainee'
 ];
 
-searchInput.addEventListener('input', () => {
-    const searchText = searchInput.value.toLowerCase();
-    const filteredData = data.filter(item => item.toLowerCase().includes(searchText));
+searchInput3.addEventListener('input', () => {
+    const searchText = searchInput3.value.toLowerCase();
+    const filteredData = data3.filter(item => item.toLowerCase().includes(searchText));
     
     displayResults(filteredData);
+    console.log("run without error");
+    console.log(filteredData)
 });
 
-function displayResults(results) {
-    searchResults.innerHTML = '';
-    results.forEach(result => {
+function displayResults(result) {
+    searchResults3.innerHTML = '';
+    result.forEach(result => {
         const li = document.createElement('li');
         li.textContent = result;
-        searchResults.appendChild(li);
+        searchResults3.appendChild(li);
     });
+    console.log("displayResult run without errror")
 }
 
-searchResults.addEventListener('click', (e) => {
+searchResults3.addEventListener('click', (e) => {
     if (e.target.tagName === 'LI') {
-        searchInput.value = e.target.textContent;
-        searchResults.innerHTML = '';
+        searchInput3.value = e.target.textContent;
+        searchResults3.innerHTML = '';
     }
 });
 
 document.body.addEventListener('click',()=>{
-    searchResults.innerHTML='';
+    searchResults3.innerHTML='';
 })

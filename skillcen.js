@@ -76,14 +76,14 @@ searchInput2.addEventListener('input', () => {
     const searchText2 = searchInput2.value.toLowerCase();
     const filteredData2 = data2.filter(item => item.toLowerCase().includes(searchText2));
     
-    displayResults(filteredData2);
+    displayResults2(filteredData2);
 });
 
-function displayResults(results) {
+function displayResults2(results) {
     searchResults2.innerHTML = '';
-    results.forEach(result => {
+    results.forEach(result2 => {
         const li2 = document.createElement('li');
-        li2.textContent = result;
+        li2.textContent = result2;
         searchResults2.appendChild(li2);
     });
 }

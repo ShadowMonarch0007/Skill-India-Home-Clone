@@ -159,16 +159,17 @@ searchInput1.addEventListener('input', () => {
     const searchText1 = searchInput1.value.toLowerCase();
     const filteredData1 = data1.filter(item => item.toLowerCase().includes(searchText1));
     
-    displayResults(filteredData1);
+    displayResults1(filteredData1);
 });
 
-function displayResults(results) {
+function displayResults1(results) {
     searchResults1.innerHTML = '';
-    results.forEach(result => {
+    results.forEach(result1 => {
         const li1 = document.createElement('li');
-        li1.textContent = result;
+        li1.textContent = result1;
         searchResults1.appendChild(li1);
     });
+    console.log("displayResult1 run without error")
 }
 
 searchResults1.addEventListener('click', (e1) => {
