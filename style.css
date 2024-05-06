@@ -2379,7 +2379,7 @@ footer {
 
 
     .fst-cntnr-2-search {
-        width: 100%;
+        width: 90%;
         height: 45px;
         transform: translateX(0%);
     }
@@ -2400,7 +2400,17 @@ footer {
 
     }
     .fst-cntnr-3{
-        overflow-x: auto !important;
+        overflow-x: scroll !important;
+    }
+    #fstsc{
+        width: 90% !important;
+    }
+    #fstsc .fst-cntnr-3{
+        overflow-x: scroll;
+        .carddtails{
+            width: 300px;
+            
+        }
     }
 
     #second {
