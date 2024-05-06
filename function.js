@@ -68,3 +68,7 @@ function hideregibtn(idName) {
     element.style.display = "none";
 
 }
+function registerpgdtail(idName){
+    var element=document.getElementById(idName);
+    element.style.display="block";
+}

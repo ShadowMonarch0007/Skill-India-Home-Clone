@@ -847,7 +847,9 @@ button.regi {
     text-decoration: none;
     border-style: none;
 }
-
+#fifth{
+    display: none;
+}
 #sixth {
     transform: translateY(50px);
 }
@@ -1554,8 +1556,7 @@ footer {
     width: 820px;
     height: 450px;
     position: absolute;
-    top: 10%;
-    left: 10%;
+    transform: translateX(230px) translateY(-210px);
     border-radius: 1rem;
     box-shadow: 0 0 100px 2px #000000;
     font-family: sans-serif;
@@ -1568,7 +1569,7 @@ footer {
     background: #e6eaf7;
     height: 100%;
     width: 341px;
-    border-radius: 1rem 0 1rem 0;
+    border-radius: 1rem 0 0 1rem;
 }
 
 .register-banner-contents {
@@ -1607,6 +1608,7 @@ footer {
 
 .register-number {
     width: 479px;
+    transform: translateX(340px) translateY(-440px);
 }
 
 .register-number-header {
@@ -1726,8 +1728,7 @@ footer {
     font-family: sans-serif;
     position: absolute;
     display: none;
-    top: 20%;
-    left: 10%;
+    transform: translateX(40%);
 }
 
 .regi-part-header {
@@ -1848,6 +1849,17 @@ footer {
     font-weight: 700;
     font-size: 14px;
     color: #333333;
+}
+#l1p,
+#lp,
+#m,
+#t,
+#tp,
+#ab,
+#ase,
+#est,
+#tpa{
+    display: none;
 }
 
 @media only screen and (max-width:1400px) {
@@ -2282,12 +2294,27 @@ footer {
         font-size: 16px;
 
     }
+    .fst-cntnr-3{
+        overflow-x: auto !important;
+    }
 
     #second {
     }
     .basicardslist{
         width: 100%;
         overflow-x: auto;
+    }
+    .basicarditem{
+        width: 100%;
+        border: 1px solid #666666 ;
+        border-radius: 1rem;
+        box-shadow: 0 0 20px #000;
+        margin: 20px 20px;
+    }
+    .basicarditem img{
+        height: 260px;
+        width: 235px;
+        transform: translateX(-30px);
     }
     .registerbutton{
         display: none;
@@ -2311,7 +2338,10 @@ footer {
         overflow-x: auto;
         overflow-y: hidden;
     }
-
+    .opporcards,
+    .opporcards-orange{
+        width: 100%;
+    }
     .carthings {
         flex-direction: column;
     }
@@ -2473,6 +2503,8 @@ footer {
         width: 335px;
         height: 490px;
         flex-direction: column;
+        display: none;
+        transform: translateX(0px) translateY(-250px);
     }
 
     .register-pg-banner {
@@ -2503,7 +2535,8 @@ footer {
     }
 
     .register-number {
-        width: 100%
+        width: 100%;
+        transform: translateX(0px)
     }
 
     .register-number-header {
@@ -2609,7 +2642,8 @@ footer {
         transform: translateY(0);
     }
     .register-partner {
-        width: 315px
+        width: 315px;
+        transform:translateX(10%);
     }
 
     .regi-part-subh {

@@ -447,7 +447,7 @@
                                             <button onclick="showregibtnmob('register-roles')" class="navregi">Register</button>
                                         </div>
                                     </div>
-                                    <div class="nav-login">
+                                    <div onclick="showregibtnmob('register-roles')" class="nav-login">
                                         <div class="loginbtn">
                                             <button class="navlogi">Login</button>
                                         </div>
@@ -793,11 +793,11 @@
                         <div id="acp" class="accounts-popup">
                             <div class="accounts-popup-item">
                                 <div class="nav-register">
-                                    <div onclick="showregibtnmob('register-roles')" class="registerbtn">
+                                    <div onclick="showregibtnmob('register-roles'),hide('acp')" class="registerbtn">
                                         <button class="navregi">Register</button>
                                     </div>
                                 </div>
-                                <div class="nav-login">
+                                <div onclick="showregibtnmob('register-roles'),hide('acp')" class="nav-login">
                                     <div class="loginbtn">
                                         <button class="navlogi">Login</button>
                                     </div>
@@ -1594,7 +1594,7 @@
                 <h5 class="d-block d-lg-none"> Select a role to explore more... </h5>
             </div>
             <div class="role-cards">
-                <div class="role-card">
+                <div onclick="showregibtnmob('register-pg'), registerpgdtail('l1p'),hideregibtn('register-roles')" class="role-card">
                     <div class="learner-svg">
                         <img src="logo/new-student.svg" alt="">
                     </div>
@@ -1603,7 +1603,7 @@
                         <h5> Learn from several Skill Courses, find Skill Centres near you and explore the Job Exchange for career growth. </h5>
                     </div>
                 </div>
-                <div class="role-card">
+                <div onclick="showregibtn('regi-part'), showregibtnmob('regi-part'),hideregibtn('register-roles')" class="role-card">
                     <div class="learner-svg">
                         <img src="logo/new-student.svg" alt="">
                     </div>
@@ -1629,14 +1629,14 @@
             </div>
             <div class="register-number">
                 <div class="register-number-header">
-                    <div id="regi-back" class="back-button">
+                    <div onclick="hideregibtn('register-pg') ,showregibtnmob('register-roles')" id="regi-back" class="back-button">
                         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M20 12H4M4 12L10 18M4 12L10 6" stroke="#EF7E22" stroke-width="1.5"
                                 stroke-linecap="round" stroke-linejoin="round"></path>
                         </svg>
                         <span>Back</span>
                     </div>
-                    <div>
+                    <div onclick="hideregibtn('register-pg'), hideregibtn('register-roles')">
                         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M18 6L6 18M6 6L18 18" stroke="black" stroke-width="1.5" stroke-linecap="round"
                                 stroke-linejoin="round"></path>
@@ -1644,7 +1644,7 @@
                     </div>
                 </div>
                 <div class="register-page-detail">
-                    <h3 id="l/p"><!----><svg width="36" height="36" viewBox="0 0 36 36" fill="none"
+                    <h3 id="l1p"><!----><svg width="36" height="36" viewBox="0 0 36 36" fill="none"
                             xmlns="http://www.w3.org/2000/svg" class="ng-star-inserted">
                             <circle cx="18" cy="18" r="18" fill="#E6EAF7"></circle>
                             <path
@@ -1708,14 +1708,14 @@
         </div>
         <div id="regi-part" class="register-partner">
             <div class="regi-part-header">
-                <div class="back-button">
+                <div onclick="hideregibtn('regi-part'), showregibtnmob('register-roles')" class="back-button">
                     <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M20 12H4M4 12L10 18M4 12L10 6" stroke="#EF7E22" stroke-width="1.5" stroke-linecap="round"
                             stroke-linejoin="round"></path>
                     </svg>
                     <span>Back</span>
                 </div>
-                <div class="cross-button">
+                <div onclick="hideregibtn('regi-part')" class="cross-button">
                     <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M18 6L6 18M6 6L18 18" stroke="black" stroke-width="1.5" stroke-linecap="round"
                             stroke-linejoin="round"></path>
@@ -1741,7 +1741,7 @@
                         <h3>Learning Partner</h3>
                         <p>Share your expertise and services to empower communities and foster knowledge-sharing.</p>
                     </div>
-                    <div class="registers-conti-btn">
+                    <div  onclick="showregibtnmob('register-pg'),registerpgdtail('lp'),hideregibtn('regi-part')" class="registers-conti-btn">
                         <span>Register</span>
                         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M4 12H20M20 12L14 6M20 12L14 18" stroke="#EF7E22" stroke-width="1.5"
@@ -1764,7 +1764,7 @@
                         <h3>Mobilizer</h3>
                         <p>Share your expertise and services to empower communities and foster knowledge-sharing.</p>
                     </div>
-                    <div class="registers-conti-btn">
+                    <div  onclick="showregibtnmob('register-pg'),registerpgdtail('m'),hideregibtn('regi-part')" class="registers-conti-btn">
                         <span>Register</span>
                         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M4 12H20M20 12L14 6M20 12L14 18" stroke="#EF7E22" stroke-width="1.5"
@@ -1787,7 +1787,7 @@
                         <h3>Trainer</h3>
                         <p>Share your expertise and services to empower communities and foster knowledge-sharing.</p>
                     </div>
-                    <div class="registers-conti-btn">
+                    <div onclick="showregibtnmob('register-pg'),registerpgdtail('t'),hideregibtn('regi-part')" class="registers-conti-btn">
                         <span>Register</span>
                         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M4 12H20M20 12L14 6M20 12L14 18" stroke="#EF7E22" stroke-width="1.5"
@@ -1810,7 +1810,7 @@
                         <h3>Training Partner</h3>
                         <p>Share your expertise and services to empower communities and foster knowledge-sharing.</p>
                     </div>
-                    <div class="registers-conti-btn">
+                    <div onclick="showregibtnmob('register-pg'),registerpgdtail('tp'),hideregibtn('regi-part')" class="registers-conti-btn">
                         <span>Register</span>
                         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M4 12H20M20 12L14 6M20 12L14 18" stroke="#EF7E22" stroke-width="1.5"
@@ -1833,7 +1833,7 @@
                         <h3>Awarding Body</h3>
                         <p>Share your expertise and services to empower communities and foster knowledge-sharing.</p>
                     </div>
-                    <div class="registers-conti-btn">
+                    <div onclick="showregibtnmob('register-pg'),registerpgdtail('ab'),hideregibtn('regi-part')" class="registers-conti-btn">
                         <span>Register</span>
                         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M4 12H20M20 12L14 6M20 12L14 18" stroke="#EF7E22" stroke-width="1.5"
@@ -1856,7 +1856,7 @@
                         <h3>Assessor</h3>
                         <p>Share your expertise and services to empower communities and foster knowledge-sharing.</p>
                     </div>
-                    <div class="registers-conti-btn">
+                    <div onclick="showregibtnmob('register-pg'),registerpgdtail('ase'),hideregibtn('regi-part')" class="registers-conti-btn">
                         <span>Register</span>
                         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M4 12H20M20 12L14 6M20 12L14 18" stroke="#EF7E22" stroke-width="1.5"
@@ -1879,7 +1879,7 @@
                         <h3>Establishment</h3>
                         <p>Share your expertise and services to empower communities and foster knowledge-sharing.</p>
                     </div>
-                    <div class="registers-conti-btn">
+                    <div onclick="showregibtnmob('register-pg'),registerpgdtail('est'),hideregibtn('regi-part')" class="registers-conti-btn">
                         <span>Register</span>
                         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M4 12H20M20 12L14 6M20 12L14 18" stroke="#EF7E22" stroke-width="1.5"
@@ -1902,7 +1902,7 @@
                         <h3>TPA</h3>
                         <p>Share your expertise and services to empower communities and foster knowledge-sharing.</p>
                     </div>
-                    <div class="registers-conti-btn">
+                    <div  onclick="showregibtnmob('register-pg'),registerpgdtail('tpa'),hideregibtn('regi-part')" class="registers-conti-btn">
                         <span>Register</span>
                         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M4 12H20M20 12L14 6M20 12L14 18" stroke="#EF7E22" stroke-width="1.5"
