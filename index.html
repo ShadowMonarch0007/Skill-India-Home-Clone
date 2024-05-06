@@ -728,7 +728,7 @@
                 </div>
                 <div class="hamnavitem2">
                     <div class="searchbar">
-                        <a onclick="show(showsearchbox)">
+                        <a onclick="document.getElementById('showsearchboxmob').style.display='block'">
                             <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
                                 xmlns="http://www.w3.org/2000/svg">
                                 <path
@@ -737,7 +737,7 @@
                                 </path>
                             </svg>
                         </a>
-                        <div id="showsearchbox" class="showsearchbar">
+                        <div id="showsearchboxmob" class="showsearchbar">
                             <div class="searchbaritems">
                                 <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
                                     xmlns="http://www.w3.org/2000/svg">
@@ -750,7 +750,7 @@
                                     placeholder="Search Skill Courses, Skill Centres and Opportunities"
                                     data-placeholder="Search Skill Courses, Skill Centres and Opportunities"
                                     aria-invalid="false" aria-required="false">
-                                <svg onclick="document.getElementById('showsearchbox').style.display='none'" width="20"
+                                <svg onclick="document.getElementById('showsearchboxmob').style.display='none'" width="20"
                                     height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <g clip-path="url(#clip0_6621_64739)">
                                         <path
@@ -784,16 +784,16 @@
                         </a>
                     </div>
                     <div class="accounts">
-                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <svg onclick="show('acp')" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <circle cx="12" cy="12" r="11" fill="white" stroke="#666666" stroke-width="2"></circle>
                             <path
                                 d="M13.1814 4.84877L13.1814 4.84878C14.7286 5.37138 15.4489 7.17551 14.6867 8.62213C13.3865 11.0896 9.63194 10.1521 9.6364 7.41065V7.41064C9.63941 5.52315 11.411 4.2507 13.1814 4.84877ZM6.5096 15.5077L6.5096 15.5077C6.58332 15.175 6.85298 14.805 7.36518 14.4426C7.87001 14.0855 8.55999 13.7729 9.36382 13.5408C10.975 13.0755 12.948 12.9601 14.6009 13.3721C15.8907 13.6937 16.8985 14.1914 17.5004 14.7075C18.1279 15.2457 18.1642 15.6418 18.0395 15.8808C17.6893 16.5523 16.8496 17.2635 15.7507 17.813C14.6643 18.3563 13.4076 18.6992 12.3094 18.6992C10.9863 18.6992 9.41819 18.1697 8.21975 17.4455C7.6226 17.0847 7.14583 16.6924 6.84435 16.323C6.53143 15.9395 6.47418 15.6676 6.5096 15.5077Z"
                                 fill="#666666" stroke="#666666"></path>
                         </svg>
-                        <div class="accounts-popup">
+                        <div id="acp" class="accounts-popup">
                             <div class="accounts-popup-item">
                                 <div class="nav-register">
-                                    <div class="registerbtn">
+                                    <div onclick="showregibtnmob('register-roles')" class="registerbtn">
                                         <button class="navregi">Register</button>
                                     </div>
                                 </div>
@@ -1704,6 +1704,213 @@
                             <span tabindex="0"> Privacy Policy </span></a>
                     </p>
                 </div>
+            </div>
+        </div>
+        <div id="regi-part" class="register-partner">
+            <div class="regi-part-header">
+                <div class="back-button">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M20 12H4M4 12L10 18M4 12L10 6" stroke="#EF7E22" stroke-width="1.5" stroke-linecap="round"
+                            stroke-linejoin="round"></path>
+                    </svg>
+                    <span>Back</span>
+                </div>
+                <div class="cross-button">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M18 6L6 18M6 6L18 18" stroke="black" stroke-width="1.5" stroke-linecap="round"
+                            stroke-linejoin="round"></path>
+                    </svg>
+                </div>
+            </div>
+            <div class="regi-part-subh">
+                <h2>Register As</h2>
+            </div>
+            <div class="regi-part-cards">
+                <div class="regi-part-card">
+                    <div class="card-header">
+                        <img src="logo/learning-partner.svg" alt="">
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="#666666" xmlns="http://www.w3.org/2000/svg"
+                            class="i-icon">
+                            <path
+                                d="M9.16699 5.83268H10.8337V7.49935H9.16699V5.83268ZM9.16699 9.16602H10.8337V14.166H9.16699V9.16602ZM10.0003 1.66602C5.40033 1.66602 1.66699 5.39935 1.66699 9.99935C1.66699 14.5993 5.40033 18.3327 10.0003 18.3327C14.6003 18.3327 18.3337 14.5993 18.3337 9.99935C18.3337 5.39935 14.6003 1.66602 10.0003 1.66602ZM10.0003 16.666C6.32533 16.666 3.33366 13.6743 3.33366 9.99935C3.33366 6.32435 6.32533 3.33268 10.0003 3.33268C13.6753 3.33268 16.667 6.32435 16.667 9.99935C16.667 13.6743 13.6753 16.666 10.0003 16.666Z"
+                                fill="#666666"></path>
+                        </svg>
+                    </div>
+    
+                    <div class="card-content">
+                        <h3>Learning Partner</h3>
+                        <p>Share your expertise and services to empower communities and foster knowledge-sharing.</p>
+                    </div>
+                    <div class="registers-conti-btn">
+                        <span>Register</span>
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M4 12H20M20 12L14 6M20 12L14 18" stroke="#EF7E22" stroke-width="1.5"
+                                stroke-linecap="round" stroke-linejoin="round"></path>
+                        </svg>
+                    </div>
+                </div>
+                <div class="regi-part-card">
+                    <div class="card-header">
+                        <img src="logo/mobilizer-reg.svg" alt="">
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="#666666" xmlns="http://www.w3.org/2000/svg"
+                            class="i-icon">
+                            <path
+                                d="M9.16699 5.83268H10.8337V7.49935H9.16699V5.83268ZM9.16699 9.16602H10.8337V14.166H9.16699V9.16602ZM10.0003 1.66602C5.40033 1.66602 1.66699 5.39935 1.66699 9.99935C1.66699 14.5993 5.40033 18.3327 10.0003 18.3327C14.6003 18.3327 18.3337 14.5993 18.3337 9.99935C18.3337 5.39935 14.6003 1.66602 10.0003 1.66602ZM10.0003 16.666C6.32533 16.666 3.33366 13.6743 3.33366 9.99935C3.33366 6.32435 6.32533 3.33268 10.0003 3.33268C13.6753 3.33268 16.667 6.32435 16.667 9.99935C16.667 13.6743 13.6753 16.666 10.0003 16.666Z"
+                                fill="#666666"></path>
+                        </svg>
+                    </div>
+    
+                    <div class="card-content">
+                        <h3>Mobilizer</h3>
+                        <p>Share your expertise and services to empower communities and foster knowledge-sharing.</p>
+                    </div>
+                    <div class="registers-conti-btn">
+                        <span>Register</span>
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M4 12H20M20 12L14 6M20 12L14 18" stroke="#EF7E22" stroke-width="1.5"
+                                stroke-linecap="round" stroke-linejoin="round"></path>
+                        </svg>
+                    </div>
+                </div>
+                <div class="regi-part-card">
+                    <div class="card-header">
+                        <img src="logo/trainer.svg" alt="">
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="#666666" xmlns="http://www.w3.org/2000/svg"
+                            class="i-icon">
+                            <path
+                                d="M9.16699 5.83268H10.8337V7.49935H9.16699V5.83268ZM9.16699 9.16602H10.8337V14.166H9.16699V9.16602ZM10.0003 1.66602C5.40033 1.66602 1.66699 5.39935 1.66699 9.99935C1.66699 14.5993 5.40033 18.3327 10.0003 18.3327C14.6003 18.3327 18.3337 14.5993 18.3337 9.99935C18.3337 5.39935 14.6003 1.66602 10.0003 1.66602ZM10.0003 16.666C6.32533 16.666 3.33366 13.6743 3.33366 9.99935C3.33366 6.32435 6.32533 3.33268 10.0003 3.33268C13.6753 3.33268 16.667 6.32435 16.667 9.99935C16.667 13.6743 13.6753 16.666 10.0003 16.666Z"
+                                fill="#666666"></path>
+                        </svg>
+                    </div>
+    
+                    <div class="card-content">
+                        <h3>Trainer</h3>
+                        <p>Share your expertise and services to empower communities and foster knowledge-sharing.</p>
+                    </div>
+                    <div class="registers-conti-btn">
+                        <span>Register</span>
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M4 12H20M20 12L14 6M20 12L14 18" stroke="#EF7E22" stroke-width="1.5"
+                                stroke-linecap="round" stroke-linejoin="round"></path>
+                        </svg>
+                    </div>
+                </div>
+                <div class="regi-part-card">
+                    <div class="card-header">
+                        <img src="logo/trainingpartner.svg" alt="">
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="#666666" xmlns="http://www.w3.org/2000/svg"
+                            class="i-icon">
+                            <path
+                                d="M9.16699 5.83268H10.8337V7.49935H9.16699V5.83268ZM9.16699 9.16602H10.8337V14.166H9.16699V9.16602ZM10.0003 1.66602C5.40033 1.66602 1.66699 5.39935 1.66699 9.99935C1.66699 14.5993 5.40033 18.3327 10.0003 18.3327C14.6003 18.3327 18.3337 14.5993 18.3337 9.99935C18.3337 5.39935 14.6003 1.66602 10.0003 1.66602ZM10.0003 16.666C6.32533 16.666 3.33366 13.6743 3.33366 9.99935C3.33366 6.32435 6.32533 3.33268 10.0003 3.33268C13.6753 3.33268 16.667 6.32435 16.667 9.99935C16.667 13.6743 13.6753 16.666 10.0003 16.666Z"
+                                fill="#666666"></path>
+                        </svg>
+                    </div>
+    
+                    <div class="card-content">
+                        <h3>Training Partner</h3>
+                        <p>Share your expertise and services to empower communities and foster knowledge-sharing.</p>
+                    </div>
+                    <div class="registers-conti-btn">
+                        <span>Register</span>
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M4 12H20M20 12L14 6M20 12L14 18" stroke="#EF7E22" stroke-width="1.5"
+                                stroke-linecap="round" stroke-linejoin="round"></path>
+                        </svg>
+                    </div>
+                </div>
+                <div class="regi-part-card">
+                    <div class="card-header">
+                        <img src="logo/awardingbody.svg" alt="">
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="#666666" xmlns="http://www.w3.org/2000/svg"
+                            class="i-icon">
+                            <path
+                                d="M9.16699 5.83268H10.8337V7.49935H9.16699V5.83268ZM9.16699 9.16602H10.8337V14.166H9.16699V9.16602ZM10.0003 1.66602C5.40033 1.66602 1.66699 5.39935 1.66699 9.99935C1.66699 14.5993 5.40033 18.3327 10.0003 18.3327C14.6003 18.3327 18.3337 14.5993 18.3337 9.99935C18.3337 5.39935 14.6003 1.66602 10.0003 1.66602ZM10.0003 16.666C6.32533 16.666 3.33366 13.6743 3.33366 9.99935C3.33366 6.32435 6.32533 3.33268 10.0003 3.33268C13.6753 3.33268 16.667 6.32435 16.667 9.99935C16.667 13.6743 13.6753 16.666 10.0003 16.666Z"
+                                fill="#666666"></path>
+                        </svg>
+                    </div>
+    
+                    <div class="card-content">
+                        <h3>Awarding Body</h3>
+                        <p>Share your expertise and services to empower communities and foster knowledge-sharing.</p>
+                    </div>
+                    <div class="registers-conti-btn">
+                        <span>Register</span>
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M4 12H20M20 12L14 6M20 12L14 18" stroke="#EF7E22" stroke-width="1.5"
+                                stroke-linecap="round" stroke-linejoin="round"></path>
+                        </svg>
+                    </div>
+                </div>
+                <div class="regi-part-card">
+                    <div class="card-header">
+                        <img src="logo/assessor.svg" alt="">
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="#666666" xmlns="http://www.w3.org/2000/svg"
+                            class="i-icon">
+                            <path
+                                d="M9.16699 5.83268H10.8337V7.49935H9.16699V5.83268ZM9.16699 9.16602H10.8337V14.166H9.16699V9.16602ZM10.0003 1.66602C5.40033 1.66602 1.66699 5.39935 1.66699 9.99935C1.66699 14.5993 5.40033 18.3327 10.0003 18.3327C14.6003 18.3327 18.3337 14.5993 18.3337 9.99935C18.3337 5.39935 14.6003 1.66602 10.0003 1.66602ZM10.0003 16.666C6.32533 16.666 3.33366 13.6743 3.33366 9.99935C3.33366 6.32435 6.32533 3.33268 10.0003 3.33268C13.6753 3.33268 16.667 6.32435 16.667 9.99935C16.667 13.6743 13.6753 16.666 10.0003 16.666Z"
+                                fill="#666666"></path>
+                        </svg>
+                    </div>
+    
+                    <div class="card-content">
+                        <h3>Assessor</h3>
+                        <p>Share your expertise and services to empower communities and foster knowledge-sharing.</p>
+                    </div>
+                    <div class="registers-conti-btn">
+                        <span>Register</span>
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M4 12H20M20 12L14 6M20 12L14 18" stroke="#EF7E22" stroke-width="1.5"
+                                stroke-linecap="round" stroke-linejoin="round"></path>
+                        </svg>
+                    </div>
+                </div>
+                <div class="regi-part-card">
+                    <div class="card-header">
+                        <img src="logo/employee_svgrepo.com.svg" alt="">
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="#666666" xmlns="http://www.w3.org/2000/svg"
+                            class="i-icon">
+                            <path
+                                d="M9.16699 5.83268H10.8337V7.49935H9.16699V5.83268ZM9.16699 9.16602H10.8337V14.166H9.16699V9.16602ZM10.0003 1.66602C5.40033 1.66602 1.66699 5.39935 1.66699 9.99935C1.66699 14.5993 5.40033 18.3327 10.0003 18.3327C14.6003 18.3327 18.3337 14.5993 18.3337 9.99935C18.3337 5.39935 14.6003 1.66602 10.0003 1.66602ZM10.0003 16.666C6.32533 16.666 3.33366 13.6743 3.33366 9.99935C3.33366 6.32435 6.32533 3.33268 10.0003 3.33268C13.6753 3.33268 16.667 6.32435 16.667 9.99935C16.667 13.6743 13.6753 16.666 10.0003 16.666Z"
+                                fill="#666666"></path>
+                        </svg>
+                    </div>
+    
+                    <div class="card-content">
+                        <h3>Establishment</h3>
+                        <p>Share your expertise and services to empower communities and foster knowledge-sharing.</p>
+                    </div>
+                    <div class="registers-conti-btn">
+                        <span>Register</span>
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M4 12H20M20 12L14 6M20 12L14 18" stroke="#EF7E22" stroke-width="1.5"
+                                stroke-linecap="round" stroke-linejoin="round"></path>
+                        </svg>
+                    </div>
+                </div>
+                <div class="regi-part-card">
+                    <div class="card-header">
+                        <img src="logo/tpa.svg" alt="">
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="#666666" xmlns="http://www.w3.org/2000/svg"
+                            class="i-icon">
+                            <path
+                                d="M9.16699 5.83268H10.8337V7.49935H9.16699V5.83268ZM9.16699 9.16602H10.8337V14.166H9.16699V9.16602ZM10.0003 1.66602C5.40033 1.66602 1.66699 5.39935 1.66699 9.99935C1.66699 14.5993 5.40033 18.3327 10.0003 18.3327C14.6003 18.3327 18.3337 14.5993 18.3337 9.99935C18.3337 5.39935 14.6003 1.66602 10.0003 1.66602ZM10.0003 16.666C6.32533 16.666 3.33366 13.6743 3.33366 9.99935C3.33366 6.32435 6.32533 3.33268 10.0003 3.33268C13.6753 3.33268 16.667 6.32435 16.667 9.99935C16.667 13.6743 13.6753 16.666 10.0003 16.666Z"
+                                fill="#666666"></path>
+                        </svg>
+                    </div>
+    
+                    <div class="card-content">
+                        <h3>TPA</h3>
+                        <p>Share your expertise and services to empower communities and foster knowledge-sharing.</p>
+                    </div>
+                    <div class="registers-conti-btn">
+                        <span>Register</span>
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M4 12H20M20 12L14 6M20 12L14 18" stroke="#EF7E22" stroke-width="1.5"
+                                stroke-linecap="round" stroke-linejoin="round"></path>
+                        </svg>
+                    </div>
+                </div>
+    
             </div>
         </div>
     </main>

@@ -1716,6 +1716,139 @@ footer {
     height: 28px;
     width: 263px;
 }
+.register-partner {
+    height: 600px;
+    width: 820px;
+    border: 1px solid #666666;
+    box-shadow: 0 0 20px 2px #000000;
+    border-radius: 1rem;
+    background-color: #ffffff;
+    font-family: sans-serif;
+    position: absolute;
+    display: none;
+    top: 20%;
+    left: 10%;
+}
+
+.regi-part-header {
+    width: 98%;
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 1%;
+
+    .back-button {
+        display: flex;
+        justify-content: space-evenly;
+        width: 84px;
+        margin: -0.5rem 0;
+        cursor: pointer;
+
+        span {
+            font-style: normal;
+            transform: translateY(-0.25rem);
+            font-weight: 500;
+            font-size: 16px;
+            color: #333333;
+        }
+    }
+}
+
+.regi-part-subh {
+    margin-bottom: 30px;
+    text-align: center;
+
+    h2 {
+        font-style: normal;
+        font-weight: 500;
+        font-size: 24px;
+        color: #333333;
+        margin-bottom: 4px;
+    }
+}
+
+.regi-part-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    width: 100%;
+    height: 215px;
+    padding: 0 0.5%;
+}
+
+.regi-part-card {
+    width: 20%;
+    margin: 1%;
+    height: 100%;
+    background: transparent;
+    border: 1px solid #333333;
+    border-radius: 1rem;
+}
+
+.card-header {
+    display: flex;
+    justify-content: space-between;
+    width: 95%;
+    transform: translateX(5px) translateY(10px);
+    margin: 0.5rem 0;
+    border-bottom: none;
+
+    img {
+        background: #e6eaf7;
+        border-radius: 50%;
+        padding: 10px;
+        transform: translateY(-5px);
+    }
+
+    svg {
+        overflow: visible;
+        margin-left: 70px;
+    }
+}
+
+.card-content {
+    width: 166px;
+    padding: 0 14px;
+    transform: translateY(-10px);
+    margin-top: 30px;
+
+    h3 {
+        font-weight: 600;
+        font-size: 14px;
+        color: #333333;
+        line-height: normal;
+        margin-bottom: 5px;
+        max-width: 130px;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        -webkit-line-clamp: 5;
+    }
+
+    p {
+        font-size: 12px;
+        color: #666666;
+        margin-bottom: 15px;
+        flex-grow: 1;
+        display: -webkit-box;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        -webkit-box-orient: vertical;
+        line-height: 16px;
+        -webkit-line-clamp: 4;
+    }
+}
+
+.registers-conti-btn {
+    display: flex;
+    width: 100px;
+    transform: translateX(8px) translateY(-10px);
+    justify-content: space-around;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    color: #333333;
+}
 
 @media only screen and (max-width:1400px) {
     .hdr {
@@ -1809,7 +1942,24 @@ footer {
     .show-hambar-item2 i {
         margin-top: 0.5rem;
     }
-
+    #showsearchboxmob{
+            width: 100%;
+            transform: translateY(-32px) translateX(-285px) ;
+        
+        .searchbaritems svg {
+            margin-left: 10px;
+            margin-right: 10px;
+        }
+        
+        .searchbaritems {
+            width: 90%;  
+        }
+        
+        .searchbaritems input {
+            width: 90%;
+            font-size: 11px;
+        }
+    }
     .accounts-popup {
         background: #ffffff;
         position: absolute;
@@ -2457,6 +2607,36 @@ footer {
         width: 263px;
         font-size: 10px;
         transform: translateY(0);
+    }
+    .register-partner {
+        width: 315px
+    }
+
+    .regi-part-subh {
+        font-size: 20px;
+    }
+
+    .regi-part-cards {
+        overflow-y: auto;
+        width: 100%;
+        height: 440px;
+    }
+
+    .regi-part-card {
+        width: 95%;
+        height: 140px;
+    }
+
+    .card-header {
+        background: transparent;
+    }
+
+    .card-content {
+        transform: translateY(-60px) translateX(60px);
+    }
+
+    .registers-conti-btn {
+        transform: translateX(68px) translateY(-74px);
     }
 
 }
