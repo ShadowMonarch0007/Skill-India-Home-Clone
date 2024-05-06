@@ -513,6 +513,114 @@ body {}
     box-shadow: 0 0 10px #666666;
 }
 
+#skill-courses-search-result:focus {
+    border-color: #c0c0c0;
+}
+
+#skill-courses-search-result {
+    list-style: none;
+    padding: 0;
+    margin-top: 3.25rem;
+    width: 90%;
+    max-height: 8rem;
+    /* border: 1px solid #ccc; */
+    border-top: none;
+    border-radius: 0 0 5px 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    position: absolute;
+    background-color: #fff;
+    overflow: auto;
+    transform: translateX(-700px) translateY(-100px);
+}
+
+#skill-courses-search-result li {
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#skill-courses-search-result li:last-child {
+    border-bottom: none;
+}
+
+#skill-courses-search-result li:hover {
+    background-color:#dcdcdc;
+}
+
+
+
+
+#job-exchange-search-result:focus {
+    border-color: #c0c0c0;
+}
+
+#job-exchange-search-result {
+    list-style: none;
+    padding: 0;
+    margin-top: 3.25rem;
+    width: 90%;
+    max-height: 8rem;
+    /* border: 1px solid #ccc; */
+    border-top: none;
+    border-radius: 0 0 5px 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    position: absolute;
+    background-color: #fff;
+    overflow: auto;
+    transform: translateX(-700px) translateY(-100px);
+}
+
+#job-exchange-search-result li {
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#job-exchange-search-result li:last-child {
+    border-bottom: none;
+}
+
+#job-exchange-search-result li:hover {
+    background-color:#dcdcdc;
+}
+
+#skill-centre-search-result:focus {
+    border-color: #c0c0c0;
+}
+
+#skill-centre-search-result {
+    list-style: none;
+    padding: 0;
+    margin-top: 3.25rem;
+    width: 90%;
+    max-height: 8rem;
+    /* border: 1px solid #ccc; */
+    border-top: none;
+    border-radius: 0 0 5px 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    position: absolute;
+    background-color: #fff;
+    overflow: auto;
+    transform: translateX(-700px) translateY(-100px);
+}
+
+#skill-centre-search-result li {
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#skill-centre-search-result li:last-child {
+    border-bottom: none;
+}
+
+#skill-centre-search-result li:hover {
+    background-color:#dcdcdc;
+}
+
 #fstjx .sccard {
     background: #ffffff !important;
     height: 310px;
