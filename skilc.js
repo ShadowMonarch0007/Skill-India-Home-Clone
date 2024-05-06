@@ -156,24 +156,24 @@ const data1=[
 
 
 searchInput1.addEventListener('input', () => {
-    const searchText = searchInput1.value.toLowerCase();
-    const filteredData = data1.filter(item => item.toLowerCase().includes(searchText));
+    const searchText1 = searchInput1.value.toLowerCase();
+    const filteredData1 = data1.filter(item => item.toLowerCase().includes(searchText1));
     
-    displayResults(filteredData);
+    displayResults(filteredData1);
 });
 
 function displayResults(results) {
     searchResults1.innerHTML = '';
     results.forEach(result => {
-        const li = document.createElement('li');
-        li.textContent = result;
-        searchResults1.appendChild(li);
+        const li1 = document.createElement('li');
+        li1.textContent = result;
+        searchResults1.appendChild(li1);
     });
 }
 
-searchResults1.addEventListener('click', (e) => {
-    if (e.target.tagName === 'LI') {
-        searchInput1.value = e.target.textContent;
+searchResults1.addEventListener('click', (e1) => {
+    if (e1.target.tagName === 'LI') {
+        searchInput1.value = e1.target.textContent;
         searchResults1.innerHTML = '';
     }
 });

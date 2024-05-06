@@ -72,3 +72,6 @@ function registerpgdtail(idName){
     var element=document.getElementById(idName);
     element.style.display="block";
 }
+
+
+

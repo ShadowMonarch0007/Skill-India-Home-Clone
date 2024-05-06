@@ -73,24 +73,24 @@ const data2=['Client Location Digital Self Learning Product',
 ];
 
 searchInput2.addEventListener('input', () => {
-    const searchText = searchInput2.value.toLowerCase();
-    const filteredData = data2.filter(item => item.toLowerCase().includes(searchText));
+    const searchText2 = searchInput2.value.toLowerCase();
+    const filteredData2 = data2.filter(item => item.toLowerCase().includes(searchText2));
     
-    displayResults(filteredData);
+    displayResults(filteredData2);
 });
 
 function displayResults(results) {
     searchResults2.innerHTML = '';
     results.forEach(result => {
-        const li = document.createElement('li');
-        li.textContent = result;
-        searchResults2.appendChild(li);
+        const li2 = document.createElement('li');
+        li2.textContent = result;
+        searchResults2.appendChild(li2);
     });
 }
 
-searchResults2.addEventListener('click', (e) => {
-    if (e.target.tagName === 'LI') {
-        searchInput2.value = e.target.textContent;
+searchResults2.addEventListener('click', (e2) => {
+    if (e2.target.tagName === 'LI') {
+        searchInput2.value = e2.target.textContent;
         searchResults2.innerHTML = '';
     }
 });
