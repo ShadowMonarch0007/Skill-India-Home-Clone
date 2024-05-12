@@ -6,6 +6,17 @@ function hide(idName) {
     var element = document.getElementById(idName);
     element.style.display = "none";
 }
+const more=document.getElementById("morebox");
+var c=0;
+const showmore=()=>{
+    if(c%2!=0){
+        more.style.display="none"
+    }
+    else{
+        more.style.display="block";
+    }
+    c++;}
+document.getElementById("id1").addEventListener('click',showmore)
 var overlay = document.createElement("div");
 function showregibtn(idName) {
 
